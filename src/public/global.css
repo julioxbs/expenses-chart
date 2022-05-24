@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+  /* ### Primary */
+  --soft-pink: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+
+  /* ### Neutral */
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+
+  /* FF */
+  --ff: 'DM Sans', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: var(--ff);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  background-color: var(--cream);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  max-width: 460px;
+  width: 100%;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+}
+
+.card-header {
+  background-color: var(--soft-pink);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.card-header div {
+  color: var(--very-pale-orange);
+}
+
+.card-header div span {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.card-header div .balance {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.card-body {
+  padding: 3rem 2rem;
+  border-radius: 10px 10px 0px 0px;
+  background-color: var(--very-pale-orange);
+}
+
+.card-body h2 {
+  color: var(--dark-brown);
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  font-weight: 700;
+}
+
+.graf {
+  background-color: var(--soft-pink);
+  width: 40px;
+  align-self: end;
+  border-radius: 5px 5px 0px 0px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.pilar {
+  align-self: end;
+  text-align: center;
+}
+
+.pilar span {
+  font-weight: 700;
+  color: var(--medium-brown);
+  letter-spacing: 1px;
+}
+
+.graf:hover {
+  background-color: var(--cyan);
+}
+
+.mon {
+  padding-top: 17.45px;
+  position: relative;
+}
+
+.mon:hover::before {
+  content: '$17.45';
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 100%;
+  background-color: var(--dark-brown);
+  color: var(--cream);
+  text-align: center;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.tue {
+  padding-top: 34.91px;
+  position: relative;
+}
+
+.tue:hover::before {
+  content: '$34.91';
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 100%;
+  background-color: var(--dark-brown);
+  color: var(--cream);
+  text-align: center;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.wed {
+  padding-top: 52.36px;
+  position: relative;
+}
+
+.wed:hover::before {
+  content: '$52.36';
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 100%;
+  background-color: var(--dark-brown);
+  color: var(--cream);
+  text-align: center;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.thu {
+  padding-top: 31.07px;
+  position: relative;
+}
+
+.thu:hover::before {
+  content: '$31.07';
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 100%;
+  background-color: var(--dark-brown);
+  color: var(--cream);
+  text-align: center;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.fri {
+  padding-top: 23.39px;
+  position: relative;
+}
+
+.fri:hover::before {
+  content: '$23.39';
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 100%;
+  background-color: var(--dark-brown);
+  color: var(--cream);
+  text-align: center;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.sat {
+  padding-top: 43.28px;
+  position: relative;
+}
+
+.sat:hover::before {
+  content: '$43.28';
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 100%;
+  background-color: var(--dark-brown);
+  color: var(--cream);
+  text-align: center;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.sun {
+  padding-top: 25.48px;
+  position: relative;
+}
+
+.sun:hover::before {
+  content: '$25.48';
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 100%;
+  background-color: var(--dark-brown);
+  color: var(--cream);
+  text-align: center;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--medium-brown);
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.card-footer {
+  padding: 1rem 2rem;
+  background-color: var(--very-pale-orange);
+  border-radius: 0 0 10px 10px;
+}
+
+.card-footer .text-muted {
+  color: var(--medium-brown);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.card-footer .total {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: var(--dark-brown);
+}
+
+.card-footer .percent {
+  text-align: end;
+  font-size: 1.5rem;
+  color: var(--dark-brown);
+  font-weight: 700;
+}
